@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class RegisterHomeController implements RegisterHomeApi {
 
     @Override
-    public ResponseEntity<RegisterHomeResponse> registerHome(@RequestBody RegisterHomeRequest registerHomeRequest) {
+    public ResponseEntity<RegisterHomeResponse> registerHome(@RequestBody RegisterHomeRequest findHomeRequest) {
         //TODO add service usage with implementation https://github.com/lunaridelmar/travelhome-pets/issues/2
 
         return ResponseEntity.ok(
                 RegisterHomeResponse.builder()
-                        .description(registerHomeRequest.getDescription())
+                        .description(findHomeRequest.getDescription())
                         .build()
         );
     }
