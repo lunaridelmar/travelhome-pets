@@ -7,7 +7,7 @@ import java.util.List;
 @Data
 public class RegisterHomeRequest {
 
-    private OwnerRequest ownerRequest;
+    private HomeOwnerRequest homeOwnerRequest;
     private AddressRequest addressRequest;
     private String description;
 
